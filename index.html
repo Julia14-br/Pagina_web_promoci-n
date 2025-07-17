@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+ #elephant-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 300px;
+  z-index: 1000;
+  pointer-events: auto;
+}
+
+#elephant-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+#elephant-controls button {
+  background: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#elephant-controls button:hover {
+  background: #3a7bc8;
+}
+</style>
+    <link rel="icon" href="icono.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bachillerato Técnico en Informática - Formación profesional en tecnología">
+    <meta name="keywords" content="bachillerato, informática, programación, redes, soporte técnico">
+    <title>TechBachi - Bachillerato Técnico en Informática</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><i class="fas fa-laptop-code"></i> TecnoBach</a>
+            <button class="hamburger"><i class="fas fa-bars"></i></button>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="AOLI.html"><i class="fas fa-file-excel"></i> Ofimática</a></li>
+                <li><a href="SOR.html"><i class="fas fa-network-wired"></i> Sistemas y Redes</a></li>
+                <li><a href="PBD.html"><i class="fas fa-code"></i> Programación</a></li>
+                <li><a href="ST.html"><i class="fas fa-tools"></i> Soporte</a></li>
+                <li><a href="DDW.html"><i class="fas fa-paint-brush"></i> Diseño Web</a></li>
+                <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Bachillerato Técnico en Informática</h1>
+            <p class="hero-subtitle">Formación profesional para el futuro digital</p>
+            <div class="hero-buttons">
+                <a href="#especialidades" class="cta-button">Explorar Especialidades</a>
+                <a href="#contacto" class="cta-button secondary">Información</a>
+            </div>
+        </div>
+       
+    </section>
+
+    <section class="especialidades" id="especialidades">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestras Especialidades</h2>
+                <p class="section-subtitle">Formación técnica en las áreas más demandadas de la informática</p>
+            </div>
+            
+            <div class="especialidades-grid">
+                <div class="especialidad-card" onclick="window.location.href='AOLI.html'">
+                    <div class="card-icon"><i class="fas fa-file-excel"></i></div>
+                    <h3 class="card-title">Aplicaciones Ofimáticas Locales y en Líne</h3>
+                    <p class="card-description"> Es una materia que enseña el uso de herramientas digitales para crear y manejar documentos, presentaciones, hojas de cálculo y otros archivos que se usan comúnmente en oficinas, estudios o trabajos. Se llama así porque abarca tanto programas locales (que se instalan en la computadora) como aplicaciones en línea (que funcionan desde internet).</p>
+                    <div class="card-footer">
+                        <a href="AOLI.html" class="card-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="especialidad-card" onclick="window.location.href='SOR.html'">
+                    <div class="card-icon"><i class="fas fa-server"></i></div>
+                    <h3 class="card-title">Sistemas Operativos y Redes</h3>
+                    <p class="card-description">Sistemas Operativos y Redes es una materia que estudia el software que permite que un equipo funcione (sistema operativo) y cómo estos equipos se conectan entre sí para compartir información (redes). Su objetivo es que el estudiante comprenda y maneje ambos aspectos de forma básica y práctica.
+.</p>
+                    <div class="card-footer">
+                        <a href="SOR.html" class="card-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="especialidad-card" onclick="window.location.href='PBD.html'">
+                    <div class="card-icon"><i class="fas fa-database"></i></div>
+                    <h3 class="card-title">Programación y Bases de Datos</h3>
+                    <p class="card-description">Programación y Base de Datos es una materia que combina dos áreas esenciales de la informática: la creación de programas mediante instrucciones lógicas (programación), y la organización de información de forma estructurada (bases de datos). Su propósito es que el estudiante desarrolle habilidades para resolver problemas a través del código y gestionar datos de manera eficiente.</p>
+                    <div class="card-footer">
+                        <a href="PBD.html" class="card-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="especialidad-card" onclick="window.location.href='ST.html'">
+                    <div class="card-icon"><i class="fas fa-tools"></i></div>
+                    <h3 class="card-title">Soporte Técnico</h3>
+                    <p class="card-description">Es una materia práctica y fundamental en la formación de un técnico en informática. Se enfoca en el mantenimiento, reparación, instalación y mejora de equipos informáticos y redes. Los estudiantes aprenden a resolver problemas técnicos y dar apoyo a usuarios.</p>
+                    <div class="card-footer">
+                        <a href="ST.html" class="card-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="especialidad-card" onclick="window.location.href='DDW.html'">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="card-title">Diseño y Desarrollo Web</h3>
+                    <p class="card-description">Es una asignatura práctica y técnica donde los estudiantes aprenden a crear sitios web y aplicaciones desde cero. Combina:Diseño visual (qué tan atractiva y fácil de usar es una página).Programación (cómo funciona "por detrás").Tecnologías modernas (herramientas que usan los profesionales).
+</p>
+                    <div class="card-footer">
+                        <a href="DDW.html" class="card-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Por qué elegir nuestro programa?</h2>
+                <p class="section-subtitle">Ventajas competitivas de nuestra formación técnica</p>
+            </div>
+            
+            <div class="beneficios-grid">
+                <div class="beneficio-item">
+                    <div class="beneficio-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Docentes </h3>
+                    <p>Experiencia profesional y académica</p>
+                </div>
+                
+                <div class="beneficio-item">
+                    <div class="beneficio-icon"><i class="fas fa-laptop-house"></i></div>
+                    <h3>Modalidad Presencial </h3>
+                    <p>Clases presenciales, con plataforma de aprendizaje.</p>
+                </div>
+                
+                <div class="beneficio-item">
+                    <div class="beneficio-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Prácticas de Trabajo</h3>
+                    <p>FCT(Formación en centros de trabajo)Convenios con cooperativas para prácticas preprofesionales y aprendizaje.</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Competencias desarrolladas </h3>
+                    <p>
+Manejo de herramientas y tecnologías especializadas,resolución de problemas técnicos e innovación y creatividad aplicada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <div class="container">
+    <div class="section-header">
+        <h2 class="section-title">Galería de Proyectos</h2>
+        <p class="section-subtitle">Trabajos destacados de nuestros estudiantes</p>
+    </div>
+    
+    <div class="carousel-container">
+        <div class="carousel">
+            <!-- Slide 1: Imagen -->
+            <div class="carousel-slide">
+                <img src="https://i.ibb.co/xt4LZmxP/imagenpag1.jpg" alt="Estudiantes trabajando en laboratorio" loading="lazy">
+                <div class="slide-caption">
+                    <h3>Laboratorio de Informática</h3>
+                    <p>Estudiantes desarrollando proyectos prácticos en nuestro laboratorio equipado.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 2: Imagen -->
+            <div class="carousel-slide">
+                <img src="https://i.ibb.co/8gwvsK9r/Imagen-de-Whats-App-2025-07-14-a-las-09-21-54-aafd45ff.jpg" alt="Logros académicos" loading="lazy">
+                <div class="slide-caption">
+                    <h3>Logros académicos</h3>
+                </div>
+            </div>
+            
+            <!-- Slide 3: Imagen -->
+            <div class="carousel-slide">
+                <img src="https://i.ibb.co/cSHbbGSZ/Imagen-de-Whats-App-2025-07-13-a-las-20-11-35-0af5a808.jpg" alt="Ferias Tecnológicas" loading="lazy">
+                <div class="slide-caption">
+                    <h3>Ferias Tecnológicas</h3>
+                </div>
+            </div>
+            
+            <!-- Slide 4: Video 1 -->
+            <div class="carousel-slide">
+                <video controls class="carousel-video">
+                    <source src="VIDEO_PUERTA.mp4" type="video/mp4">
+                </video>
+                <div class="slide-caption">
+                    <h3>Proyectos creados para resolver problemas reales.</h3>
+                    <p>Puerta eléctrica con cámara de seguridad que se puede abrir a través de una aplicación del celular.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 5: Video 2 -->
+            <div class="carousel-slide">
+                <video controls class="carousel-video">
+                    <source src="VIDEO_TOUR.mp4" type="video/mp4">
+                </video>
+                <div class="slide-caption">
+                    <h3>Tour Virtual</h3>
+                    <p>Conoce nuestras instalaciones y equipamiento tecnológico.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 6: Video 3 -->
+            <div class="carousel-slide">
+                <video controls class="carousel-video">
+                    <source src="VIDEO_TREN.mp4" type="video/mp4">
+                </video>
+                <div class="slide-caption">
+                    <h3>Tren eléctrico</h3>
+                    <p>Tren eléctrico con motor DC.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 7: Video 4 -->
+            <div class="carousel-slide">
+                <video controls class="carousel-video">
+                    <source src="VIDEO_ROBOT.mp4" type="video/mp4">
+                </video>
+                <div class="slide-caption">
+                    <h3>ElectroBot</h3>
+                    <p>Robot básico impulsado por pilas que se desplaza mediante conexiones eléctricas y un control manual.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 8: Video 5 -->
+            <div class="carousel-slide">
+                <video controls class="carousel-video">
+                    <source src="VIDEO_PULSOMETRO.mp4" type="video/mp4">
+                </video>
+                <div class="slide-caption">
+                    <h3>Pulsómetro eléctrico</h3>
+                    <p>Su función es poner a prueba el pulso, la precisión y la estabilidad de la mano del jugador.</p>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-nav carousel-prev" aria-label="Slide anterior"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-nav carousel-next" aria-label="Slide siguiente"><i class="fas fa-chevron-right"></i></button>
+        
+        <div class="carousel-controls">
+            <span class="carousel-dot active"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+        </div>
+        
+        <div class="slide-counter">1 / 8</div>
+    </div>
+</div>
+
+<!-- JavaScript optimizado para el carrusel -->
+ <script>
+const carouselSlides = document.querySelectorAll('.carousel-slide');
+const videos = document.querySelectorAll('.carousel-video');
+let currentSlideIndex = 0;
+
+function goToSlide(index) {
+    // Pausar todos los videos primero
+    videos.forEach(video => {
+        video.pause();
+    });
+
+    // Ocultar todos los slides
+    carouselSlides.forEach(slide => slide.classList.remove('active'));
+    
+    // Mostrar slide actual
+    carouselSlides[index].classList.add('active');
+    currentSlideIndex = index;
+    
+    // Reproducir video del slide actual (si existe)
+    const currentVideo = carouselSlides[index].querySelector('.carousel-video');
+    if (currentVideo) {
+        currentVideo.play().catch(e => console.log("Autoplay bloqueado:", e));
+    }
+    
+    // Actualizar controles
+    updateControls();
+}
+
+function updateControls() {
+    // Actualizar contador
+    document.querySelector('.slide-counter').textContent = `${currentSlideIndex + 1} / ${carouselSlides.length}`;
+    
+    // Actualizar dots
+    document.querySelectorAll('.carousel-dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlideIndex);
+    });
+}
+
+// Event listeners (se mantienen igual)
+document.querySelector('.carousel-prev').addEventListener('click', () => {
+    const newIndex = (currentSlideIndex - 1 + carouselSlides.length) % carouselSlides.length;
+    goToSlide(newIndex);
+});
+
+document.querySelector('.carousel-next').addEventListener('click', () => {
+    const newIndex = (currentSlideIndex + 1) % carouselSlides.length;
+    goToSlide(newIndex);
+});
+
+document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+    dot.addEventListener('click', () => goToSlide(index));
+});
+
+// Inicialización con autoplay para el primer video si es un video
+goToSlide(0);
+
+// Opcional: Pausar videos cuando no están en vista
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+        videos.forEach(video => video.pause());
+    } else {
+        const currentVideo = document.querySelector('.carousel-slide.active .carousel-video');
+        if (currentVideo) currentVideo.play().catch(e => console.log(e));
+    }
+});
+</script>
+
+    <section class="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Testimonios</h2>
+                <p class="section-subtitle">Lo que dicen nuestros estudiantes y egresados</p>
+            </div>
+            
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="testimonio-content">
+                        <div class="testimonio-text">
+                            <p>"Desde mi punto de vista, el bachillerato en Informática ha 
+                                sido una de las mejores etapas de mi vida estudiantil. Es una formación
+                                 muy completa, que no solo te enseña teoría, sino que te prepara con herramientas prácticas que
+                                  te sirven para el presente y el futuro. Los profesores son geniales, tienen dominio de la materia, paciencia para enseñar y
+                                   siempre están dispuestos a guiar".
+
+"</p>
+                        </div>
+                        
+                        <div class="testimonio-author">                            
+                            <div class="author-info">
+                                <h4>Alicia Bravo</h4>
+                                <p>Egresada 2023 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="testimonio-card">
+                    <div class="testimonio-content">
+                        <div class="testimonio-text">
+                            <p>"El Bachillerato Técnico en Informática en la UEF JAQF, me permitió ampliar mis conocimientos 
+                                en los cinco ámbitos que se nos instruyó, para saber reconocer un problema, indagar y comparar soluciones y, analizar 
+                                la mejor opción para dar respuesta a una necesidad de software, hardware, soporte técnico, etc. Lo cuál en mi día a día me 
+                                permite ser más acertado en decisiones rápidas y concisas, o necesidades que se debe llevar con más planificación."</p>
+                        </div>
+                        <div class="testimonio-author">                            
+                            <div class="author-info">
+                                <h4>Jaime ludeña</h4>
+                                <p>Egresado 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonio-card">
+                    <div class="testimonio-content">
+                        <div class="testimonio-text">
+                            <p>"Mi experiencia en el bachillerato técnico en informática fue una etapa muy significativa y 
+                                enriquecedora. Compartí momentos inolvidables con mis compañeros, entre risas, apoyo mutuo y 
+                                largas horas trabajando en equipo. Tuvimos la oportunidad de desarrollar proyectos con Arduino, crear página
+                                s web funcionales desde cero y dar nuestros primeros pasos en el mundo de la programación, enfrentando
+                                 juntos cada reto como una aventura de aprendizaje. Uno de los recuerdos más bonitos fue participar en ferias innovadoras, 
+                                 donde presentamos nuestras creaciones con orgullo, demostrando lo que habíamos aprendido y ganando confianza en nuestras capacidades
+                                . Las prácticas pre profesionales también fueron valiosas, pues nos permitieron aplicar nuestros conocimientos en entornos reales, afianzando nuestras habilidades. 
+                                Todo esto fue posible gracias a la dedicación, guía y acompañamiento constante de nuestros docentes, quienes no solo nos enseñaron contenidos técnicos, sino también a creer en 
+                                nosotros mismos y en nuestro potencial."</p>
+                        </div>
+                        <div class="testimonio-author">
+                            <div class="author-info">
+                                <h4> Hailye Ojeda</h4>
+                                <p>Egresada 2025</p>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+                  <div class="testimonio-card">
+                    <div class="testimonio-content">
+                        <div class="testimonio-text">
+                            <p>"Estudiar el bachillerato técnico fue una experiencia muy enriquecedora para mi formación. 
+                                Tuve la oportunidad de cursar materias no solo teoricas, sino también prácticas, lo que hacía 
+                                que el aprendizaje fuera mucho más entretenido. Gracias a esta formacion, adquiri bases sólidas
+                                 que han sido fundamentales para mi carrera actual, y comprendi como la informática puede aplicarse en cualquier sector."</p>
+                        </div>
+                        <div class="testimonio-author">
+                            <div class="author-info">
+                                <h4> Kevin Robles</h4>
+                                <p>Egresado 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+          
+          <div class="testimonio-card">
+                    <div class="testimonio-content">
+                        <div class="testimonio-text">
+                            <p>"Actualmente estoy cruzando mi último año de bachillerato en Técnico en Informática y
+                                 a lo largo de este tiempo he aprendido varias cosas importantes, tanto en lo académico como en lo personal.
+                                  He adquirido conocimientos sobre programación, desarrollo de páginas web, bases de datos y redes, entre otros 
+                                  temas que forman parte de esta especialidad.También he aprendido a organizarme mejor, a trabajar en equipo y
+                                   a enfrentar los retos que se presentan. Sé que este último año no será fácil, pero estoy preparada para seguir aprendiendo
+                                    y terminar esta etapa de la mejor manera."</p>
+                        </div>
+                        <div class="testimonio-author">
+                            <div class="author-info">
+                                <h4> Arelis Ochoa</h4>
+                                <p>Estudiante 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <h2>Contáctanos</h2>
+                    
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p> Gonzanamá, Calle 24 de mayo entre Simón Bolívar y Guillermo Bravo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>072 664 117 / 0993835918</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p> 11h00937uef.pjorgeabiatar@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+    <a href="https://www.facebook.com/unidadpadrejorgeabiatarquevedo" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/uef_padre_jorge_abiatar/?igsh=MTF6OGtia3pwZmlweA%3D%3D" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+                    </div>
+                </div>
+        </div>
+    </section>
+             <section class="creditos">
+    <h2>Créditos</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h3>Julia Bravo</h3>
+            <p>Desarrollo y programación del sitio web </p>
+            <ul>
+                <li>Estructura HTML/CSS</li>
+                <li>Funcionalidad JavaScript</li>
+                <li>Implementación Técnica</li>
+            </ul>
+        </div>
+        <div class="timeline-item">
+            <h3>Arelis Ochoa</h3>
+            <p>Diseño multimedia</p>
+            <ul>
+                <li>Selección de imágenes</li>
+                <li>Edición de video</li>
+                <li>Recursos visuales</li>
+            </ul>
+        </div>
+        <div class="timeline-item">
+            <h3>Mishell Martínez</h3>
+            <p>Investigación y contenido</p>
+            <ul>
+                <li>Recopilación de información</li>
+                <li>Verificación de datos</li>
+                <li>Documentación técnica</li>
+            </ul>
+        </div>
+    </div>
+    
+</section>
+
+
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Razones para seguir</h2>
+                <p class="section-subtitle">Bachillerato técnico en informática.</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>
+El bachillerato técnico te prepara con habilidades específicas que el mercado laboral demanda actualmente. Según estudios del sector educativo, los graduados técnicos tienen tasas de empleabilidad superiores al 85% en los primeros seis meses después de graduarse.</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Mientras otros bachilleratos se enfocan principalmente en teoría, el técnico te permite aplicar conocimientos en proyectos concretos desde el primer año.</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>                  
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>El enfoque por proyectos y la resolución de problemas reales fomentan naturalmente el pensamiento emprendedor. </span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>                   
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Los estudiantes de bachillerato técnico ingresan a la universidad con una base práctica sólida, lo que les da ventaja en carreras de ingeniería, tecnología, diseño y emprendimiento. </span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>No sacrificas formación académica por la técnica. Recibes educación completa en materias tradicionales mientras desarrollas competencias técnicas especializadas.</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><i class="fas fa-laptop-code"></i> TecnoBach</h3>
+                    <p>Formando a los profesionales técnicos en informática del futuro.</p>
+                    <div class="footer-social">
+                         <a href="https://www.facebook.com/unidadpadrejorgeabiatarquevedo" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/uef_padre_jorge_abiatar/?igsh=MTF6OGtia3pwZmlweA%3D%3D" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">Admisiones</a></li>
+                    </ul>
+                </div>
+            </div>
+                <div class="footer-col">
+                    <h3>Especialidades</h3>
+                    <ul>
+                        <li><a href="AOLI.html">Ofimática</a></li>
+                        <li><a href="SOR.html">Sistemas y Redes</a></li>
+                        <li><a href="PBD.html">Programación</a></li>
+                        <li><a href="ST.html">Soporte Técnico</a></li>
+                        <li><a href="DDW.html">Diseño Web</a></li>
+                    </ul>
+                </div>
+                
+                
+            
+            
+    <div id="elephant-container">
+  <div id="loading">Cargando elefante...</div>
+  <div id="elephant-controls" style="display: none;">
+    <button onclick="saludar()">Saludar</button>
+    <button onclick="pensar()">Pensar</button>
+    <button onclick="celebrar()">Celebrar</button>
+    <button onclick="cambiarColor()">Cambiar Color</button>
+  </div>
+</div>
+</div>
+        
+    </footer>
+
+
+    <a href="#" class="scroll-to-top" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+    let scene, camera, renderer, elephant, clock;
+    let isMouseDown = false;
+    let mouseX = 0, mouseY = 0;
+    let currentAnimation = null;
+    let colors = [
+        0x8B7355, // Gris elefante natural
+        0x4A90E2, // Azul
+        0xE94B4B, // Rojo
+        0x50C878, // Verde
+        0xFFD700, // Dorado
+        0xFF69B4  // Rosa
+    ];
+    let currentColorIndex = 0;
+
+    function init() {
+        // Crear escena
+        scene = new THREE.Scene();
+        scene.background = null; // Transparente
+
+        // Crear cámara
+        camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+        camera.position.set(0, 2, 8);
+
+        // Crear renderizador
+        renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(300, 300);
+        renderer.setClearColor(0x000000, 0);
+        renderer.shadowMap.enabled = true;
+        document.getElementById('elephant-container').insertBefore(renderer.domElement, document.getElementById('elephant-container').firstChild);
+
+        // Crear reloj para animaciones
+        clock = new THREE.Clock();
+
+        // Crear elefante
+        createElephant();
+
+        // Crear iluminación
+        createLighting();
+
+        // Mostrar controles y ocultar loading
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('elephant-controls').style.display = 'flex';
+
+        // Iniciar animación
+        animate();
+    }
+
+    function createElephant() {
+        elephant = new THREE.Group();
+
+        // Cuerpo
+        const bodyGeometry = new THREE.SphereGeometry(1.5, 32, 32);
+        bodyGeometry.scale(1, 0.8, 1.2);
+        const bodyMaterial = new THREE.MeshPhongMaterial({ 
+            color: colors[currentColorIndex],
+            shininess: 30
+        });
+        const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
+        body.position.y = 0;
+        body.castShadow = true;
+        elephant.add(body);
+
+        // Cabeza
+        const headGeometry = new THREE.SphereGeometry(1, 32, 32);
+        const headMaterial = new THREE.MeshPhongMaterial({ 
+            color: colors[currentColorIndex],
+            shininess: 30
+        });
+        const head = new THREE.Mesh(headGeometry, headMaterial);
+        head.position.set(0, 1.2, 1.5);
+        head.castShadow = true;
+        elephant.add(head);
+
+        // Trompa (mejorada con curvatura)
+        const trunkCurve = new THREE.CubicBezierCurve3(
+            new THREE.Vector3(0, 0.9, 2.5),//punto inicial cabeza
+            new THREE.Vector3(0, 1.2, 2.0),//control 1 elevado
+            new THREE.Vector3(0, 0.8, 3.5),//control 2 menos bajo
+            new THREE.Vector3(0, 0.2, 4.0)//punto final menos bajo
+                        
+    );
+        const trunkPoints = trunkCurve.getPoints(20);
+        const trunkGeometry = new THREE.TubeGeometry(
+            new THREE.CatmullRomCurve3(trunkPoints),
+            20,
+            0.2,
+            16,
+            false
+        );
+        const trunkMaterial = new THREE.MeshPhongMaterial({ 
+            color: colors[currentColorIndex],
+            shininess: 30
+        });
+        const trunk = new THREE.Mesh(trunkGeometry, trunkMaterial);
+        trunk.castShadow = true;
+        elephant.add(trunk);
+
+        // Orejas (mejoradas con más detalle)
+        const earGeometry = new THREE.SphereGeometry(0.8, 32, 32);
+        earGeometry.scale(0.1, 1, 1.2);
+        const earMaterial = new THREE.MeshPhongMaterial({ 
+            color: colors[currentColorIndex],
+            shininess: 30,
+            side: THREE.DoubleSide
+        });
+        
+        const leftEar = new THREE.Mesh(earGeometry, earMaterial);
+        leftEar.position.set(-0.9, 1.3, 1.0);
+        leftEar.rotation.z = -Math.PI / 5;
+        leftEar.rotation.x = Math.PI / 10;
+        leftEar.castShadow = true;
+        elephant.add(leftEar);
+
+        const rightEar = new THREE.Mesh(earGeometry, earMaterial);
+        rightEar.position.set(0.9, 1.3, 1.0);
+        rightEar.rotation.z = Math.PI / 5;
+        rightEar.rotation.x = Math.PI / 10;
+        rightEar.castShadow = true;
+        elephant.add(rightEar);
+
+        // Ojos (mejorados con iris y pupilas)
+        const eyeBaseGeometry = new THREE.SphereGeometry(0.25, 16, 16);
+        const eyeBaseMaterial = new THREE.MeshPhongMaterial({ color: 0xffffff });
+        
+        const leftEyeBase = new THREE.Mesh(eyeBaseGeometry, eyeBaseMaterial);
+        leftEyeBase.position.set(-0.4, 1.4, 2.1);
+        elephant.add(leftEyeBase);
+
+        const rightEyeBase = new THREE.Mesh(eyeBaseGeometry, eyeBaseMaterial);
+        rightEyeBase.position.set(0.4, 1.4, 2.1);
+        elephant.add(rightEyeBase);
+
+        // Iris (color)
+        const irisGeometry = new THREE.SphereGeometry(0.25, 16, 16);
+        const irisMaterial = new THREE.MeshPhongMaterial({ color: 0x4682B4 });
+        
+        const leftIris = new THREE.Mesh(irisGeometry, irisMaterial);
+        leftIris.position.set(-0.4, 1.4, 2.18);
+        elephant.add(leftIris);
+
+        const rightIris = new THREE.Mesh(irisGeometry, irisMaterial);
+        rightIris.position.set(0.4, 1.4, 2.18);
+        elephant.add(rightIris);
+
+        // Pupila (negro)
+        const pupilGeometry = new THREE.SphereGeometry(0.25, 16, 16);
+        const pupilMaterial = new THREE.MeshPhongMaterial({ color: 0x000000 });
+        
+        const leftPupil = new THREE.Mesh(pupilGeometry, pupilMaterial);
+        leftPupil.position.set(-0.4, 1.4, 2.2);
+        elephant.add(leftPupil);
+
+        const rightPupil = new THREE.Mesh(pupilGeometry, pupilMaterial);
+        rightPupil.position.set(0.4, 1.4, 2.2);
+        elephant.add(rightPupil);      
+
+              
+        // Patas
+        const legGeometry = new THREE.CylinderGeometry(0.3, 0.4, 1.5, 16);
+        const legMaterial = new THREE.MeshPhongMaterial({ 
+            color: colors[currentColorIndex],
+            shininess: 30
+        });
+
+        const legPositions = [
+            [-0.8, -1.2, 0.5],
+            [0.8, -1.2, 0.5],
+            [-0.8, -1.2, -0.5],
+            [0.8, -1.2, -0.5]
+        ];
+
+        legPositions.forEach((pos, i) => {
+            const leg = new THREE.Mesh(legGeometry, legMaterial);
+            leg.position.set(pos[0], pos[1], pos[2]);
+            leg.castShadow = true;
+            elephant.add(leg);
+        });
+
+        // Cola
+        const tailGeometry = new THREE.CylinderGeometry(0.05, 0.1, 1, 8);
+        const tailMaterial = new THREE.MeshPhongMaterial({ 
+            color: colors[currentColorIndex],
+            shininess: 30
+        });
+        const tail = new THREE.Mesh(tailGeometry, tailMaterial);
+        tail.position.set(0, 0, -1.8);
+        tail.rotation.x = Math.PI / 6;
+        tail.castShadow = true;
+        elephant.add(tail);
+
+        scene.add(elephant);
+    }
+
+    function createLighting() {
+        // Luz ambiental
+        const ambientLight = new THREE.AmbientLight(0x404040, 0.4);
+        scene.add(ambientLight);
+
+        // Luz direccional principal
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+        directionalLight.position.set(5, 10, 5);
+        directionalLight.castShadow = true;
+        directionalLight.shadow.mapSize.width = 1024;
+        directionalLight.shadow.mapSize.height = 1024;
+        scene.add(directionalLight);
+
+        // Luz de relleno
+        const fillLight = new THREE.DirectionalLight(0x8080ff, 0.3);
+        fillLight.position.set(-5, 5, -5);
+        scene.add(fillLight);
+    }
+
+    function animate() {
+        requestAnimationFrame(animate);
+
+        const delta = clock.getDelta();
+
+        // Animación suave de flotación
+        if (elephant) {
+            const time = Date.now() * 0.001;
+            elephant.position.y = Math.sin(time) * 0.2;
+            elephant.rotation.y += 0.002;
+            
+            // Movimiento sutil de orejas y trompa
+            const earLeft = elephant.children.find(child => child.position.x < 0 && child.position.y > 1);
+            const earRight = elephant.children.find(child => child.position.x > 0 && child.position.y > 1);
+            const trunk = elephant.children.find(child => child.geometry instanceof THREE.TubeGeometry && child.position.z > 2);
+            
+            if (earLeft && earRight && trunk) {
+                earLeft.rotation.z = -Math.PI / 5 + Math.sin(time * 2) * 0.1;
+                earRight.rotation.z = Math.PI / 5 + Math.sin(time * 2 + Math.PI) * 0.1;
+                trunk.rotation.x = Math.PI / 6 + Math.sin(time * 1.5) * 0.1;
+            }
+        }
+
+        renderer.render(scene, camera);
+    }
+
+    function saludar() {
+        if (currentAnimation) return;
+        
+        currentAnimation = true;
+        const originalRotation = elephant.rotation.y;
+        const originalPosition = elephant.position.y;
+        
+        // Elementos faciales
+        const smile = elephant.children.find(child => child.geometry instanceof THREE.TubeGeometry);
+        const eyelids = elephant.children.filter(child => child.geometry instanceof THREE.SphereGeometry && child.scale.y < 1);
+        const brows = elephant.children.filter(child => child.geometry instanceof THREE.CylinderGeometry && child.position.y > 1.5);
+        
+        const duration = 2000;
+        const startTime = Date.now();
+        
+        function saludoAnimation() {
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            elephant.rotation.y = originalRotation + Math.sin(progress * Math.PI * 4) * 0.3;
+            elephant.position.y = originalPosition + Math.sin(progress * Math.PI * 2) * 0.5;
+            
+            // Animación facial
+           
+            
+            if (eyelids.length === 2) {
+                eyelids[0].position.y = 1.45 + Math.sin(progress * Math.PI * 4) * 0.05;
+                eyelids[1].position.y = 1.45 + Math.sin(progress * Math.PI * 4) * 0.05;
+            }
+            
+            if (brows.length === 2) {
+                brows[0].rotation.z = -Math.PI / 10 + Math.sin(progress * Math.PI * 4) * 0.1;
+                brows[1].rotation.z = Math.PI / 10 + Math.sin(progress * Math.PI * 4) * 0.1;
+            }
+            
+            if (progress < 1) {
+                requestAnimationFrame(saludoAnimation);
+            } else {
+                elephant.rotation.y = originalRotation;
+                elephant.position.y = originalPosition;
+                if (smile) smile.scale.set(1, 1, 1);
+                currentAnimation = null;
+            }
+        }
+        
+        saludoAnimation();
+    }
+
+    function pensar() {
+        if (currentAnimation) return;
+        
+        currentAnimation = true;
+        const duration = 3000;
+        const startTime = Date.now();
+        
+        function pensarAnimation() {
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // Movimiento de cabeza pensativa
+            elephant.rotation.x = Math.sin(progress * Math.PI * 2) * 0.2;
+            elephant.scale.setScalar(1 + Math.sin(progress * Math.PI * 3) * 0.1);
+            
+            // Ojos entrecerrados
+            const eyelids = elephant.children.filter(child => child.geometry instanceof THREE.SphereGeometry && child.scale.y < 1);
+            eyelids.forEach(eyelid => {
+                eyelid.scale.y = 0.3 + Math.abs(Math.sin(progress * Math.PI * 3)) * 0.2;
+            });
+            
+            if (progress < 1) {
+                requestAnimationFrame(pensarAnimation);
+            } else {
+                elephant.rotation.x = 0;
+                elephant.scale.setScalar(1);
+                eyelids.forEach(eyelid => eyelid.scale.y = 0.3);
+                currentAnimation = null;
+            }
+        }
+        
+        pensarAnimation();
+    }
+
+    function celebrar() {
+        if (currentAnimation) return;
+        
+        currentAnimation = true;
+        const duration = 2500;
+        const startTime = Date.now();
+        
+        function celebrarAnimation() {
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            elephant.position.y = Math.abs(Math.sin(progress * Math.PI * 6)) * 2;
+            elephant.rotation.y += 0.1;
+            
+            // Orejas moviéndose más
+            const earLeft = elephant.children.find(child => child.position.x < 0 && child.position.y > 1);
+            const earRight = elephant.children.find(child => child.position.x > 0 && child.position.y > 1);
+            
+            if (earLeft && earRight) {
+                earLeft.rotation.z = -Math.PI / 5 + Math.sin(progress * Math.PI * 8) * 0.3;
+                earRight.rotation.z = Math.PI / 5 + Math.sin(progress * Math.PI * 8 + Math.PI) * 0.3;
+            }
+            
+            if (progress < 1) {
+                requestAnimationFrame(celebrarAnimation);
+            } else {
+                elephant.position.y = 0;
+                currentAnimation = null;
+            }
+        }
+        
+        celebrarAnimation();
+    }
+
+    function cambiarColor() {
+        currentColorIndex = (currentColorIndex + 1) % colors.length;
+        const newColor = colors[currentColorIndex];
+        
+        elephant.children.forEach(child => {
+            if (child.material && child.material.color && 
+                !(child.geometry instanceof THREE.TubeGeometry) && // No cambiar color a la sonrisa
+                !(child.material.color.getHex() === 0x000000) && // No cambiar color a los ojos/cejas
+                !(child.material.color.getHex() === 0x333333) && // No cambiar color a las cejas
+                !(child.material.color.getHex() === 0xffffff)) { // No cambiar color a la base de los ojos
+                child.material.color.setHex(newColor);
+            }
+        });
+    }
+
+    // Inicializar cuando se carga la página
+    window.addEventListener('load', init);
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
