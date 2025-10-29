@@ -95,11 +95,19 @@ nav {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    min-width: 120px; /* Espacio suficiente para B-TEC */
+    white-space: nowrap; /* Evita que se divida en varias líneas */
+    overflow: visible; /* Asegura que todo el texto sea visible */
 }
 
 .logo i {
     font-size: 1.8rem;
+    flex-shrink: 0;
 }
+.logo-text {
+            white-space: nowrap; /* Texto siempre en una línea */
+        }
+
 
 .nav-menu {
     display: flex;
@@ -1185,3 +1193,4 @@ footer {
     background: #4a6baf;
     border-radius: 50%;
 }
+
