@@ -100,10 +100,7 @@ nav {
     overflow: visible; /* Asegura que todo el texto sea visible */
 }
 
-.logo i {
-    font-size: 1.8rem;
-    flex-shrink: 0;
-}
+
 .logo-text {
             white-space: nowrap; /* Texto siempre en una línea */
         }
@@ -1193,4 +1190,5 @@ footer {
     background: #4a6baf;
     border-radius: 50%;
 }
+
 
